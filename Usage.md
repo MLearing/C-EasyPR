@@ -84,16 +84,16 @@ OpenCV for Windows 通常会将使用VS编译好二进制文件放到 `opencv\bu
 如果项目在使用的时候出现问题，请参考下面修改
 
 1· 修改文件config.h，添加宏定义“#define CV_VERSION_THREE_TWO”，原来是“CV_VERSION_THREE_ZERO”注掉，对应opencv版本，不过并不是必须的，我3.1.0，    没有修改也可以用，所以可以不修改，如果出现问题在修改。
-   文件位置libeasypr->头文件->easypr->config.h
+   * 文件位置libeasypr->头文件->easypr->config.h
    
 2· libeasypr项目添加依赖库（opencv_world320.lib/opencv_world320d.lib）
-    添加的位置，项目属性->库管理器->附加依赖项
+   * 添加的位置，项目属性->库管理器->附加依赖项
     
 3· 编译时提示“thirdparty/textDetect/erfilter.hpp”: No such file or directory
-    解决方法：将easyPR工程根目录下的thirdparty目录拷贝到easyPR根目录下的include目录里，重新编译
+    * 解决方法：将easyPR工程根目录下的thirdparty目录拷贝到easyPR根目录下的include目录里，重新编译
     
 4· 将工程对应的平台改成x64
-    进入项目属性->配置管理器->将libeasypr项目平台改成x64
+   * 进入项目属性->配置管理器->将libeasypr项目平台改成x64
     
 到这里easyPR基本可以编译通过，同时会提示大量警告信息（暂时先忍下，等熟悉了先消灭他们^_^）
 
