@@ -100,8 +100,10 @@ OpenCV for Windows 通常会将使用VS编译好二进制文件放到 `opencv\bu
     
 到这里easyPR基本可以编译通过，同时会提示大量警告信息（暂时先忍下，等熟悉了先消灭他们^_^）
 
-参考链接：1. https://blog.csdn.net/g_su_xw/article/details/75330652
-
+参考链接：
+	 
+	 1. https://blog.csdn.net/g_su_xw/article/details/75330652
+	 
 	 2. https://blog.csdn.net/xv1356027897/article/details/80118498
 	 
 	 3. https://blog.csdn.net/im6520/article/details/75116282
