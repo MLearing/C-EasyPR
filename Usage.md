@@ -89,7 +89,7 @@ OpenCV for Windows 通常会将使用VS编译好二进制文件放到 `opencv\bu
 2· libeasypr项目添加依赖库（opencv_world320.lib/opencv_world320d.lib）
    * `添加的位置，项目属性->库管理器->附加依赖项`
    
-3. 运行代码会发现找不到opencv_world300d.lib，我们这里面并没有使用300的版本，而是310，发现是因为这里的工程里原来设置里有300的lib
+3· 运行代码会发现找不到opencv_world300d.lib，我们这里面并没有使用300的版本，而是310，发现是因为这里的工程里原来设置里有300的lib
    * `解决办法：属性管理器->demo->Debug|x64 右键->属性->链接器->输入->附加依赖项->编辑->删除opencv_world300d.lib，换成自己的版本，例如我的版本         opencv_world310d.lib`
 
 4· 编译时提示“thirdparty/textDetect/erfilter.hpp”: No such file or directory
